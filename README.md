@@ -1,15 +1,27 @@
 # Is Modularity Transferable? A Case Study through the Lens of Knowledge Distillation
-This project provides the codebase required to reproduce experiments introduced in the paper [Is Modularity Transferable? A Case Study through the Lens of Knowledge Distillation](https://arxiv.org/pdf/2403.18804) at [LREC-COLING 2024](https://lrec-coling-2024.org/).
+This project provides the codebase required to reproduce experiments introduced in the paper [Is Modularity Transferable? A Case Study through the Lens of Knowledge Distillation](https://aclanthology.org/2024.lrec-main.817.pdf) at [LREC-COLING 2024](https://lrec-coling-2024.org/).
 
 ## Citation
 ```
-@misc{klimaszewski2024modularity,
-      title={Is Modularity Transferable? A Case Study through the Lens of Knowledge Distillation}, 
-      author={Mateusz Klimaszewski and Piotr Andruszkiewicz and Alexandra Birch},
-      year={2024},
-      eprint={2403.18804},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{klimaszewski-etal-2024-modularity-transferable,
+    title = "Is Modularity Transferable? A Case Study through the Lens of Knowledge Distillation",
+    author = "Klimaszewski, Mateusz  and
+      Andruszkiewicz, Piotr  and
+      Birch, Alexandra",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.817",
+    pages = "9352--9360",
+    abstract = "The rise of Modular Deep Learning showcases its potential in various Natural Language Processing applications. Parameter-efficient fine-tuning (PEFT) modularity has been shown to work for various use cases, from domain adaptation to multilingual setups. However, all this work covers the case where the modular components are trained and deployed within one single Pre-trained Language Model (PLM). This model-specific setup is a substantial limitation on the very modularity that modular architectures are trying to achieve. We ask whether current modular approaches are transferable between models and whether we can transfer the modules from more robust and larger PLMs to smaller ones. In this work, we aim to fill this gap via a lens of Knowledge Distillation, commonly used for model compression, and present an extremely straightforward approach to transferring pre-trained, task-specific PEFT modules between same-family PLMs. Moreover, we propose a method that allows the transfer of modules between incompatible PLMs without any change in the inference complexity. The experiments on Named Entity Recognition, Natural Language Inference, and Paraphrase Identification tasks over multiple languages and PEFT methods showcase the initial potential of transferable modularity.",
 }
 ```
 ## Installation
